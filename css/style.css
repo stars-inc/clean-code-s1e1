@@ -1,0 +1,188 @@
+/* basic style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+li,
+h3 {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  width: 60px;
+  
+  background-color: transparent;
+  border: 0px;
+
+  font-size: 15px;
+  color: #888;
+  
+  cursor: pointer;
+}
+
+/* heading */
+
+.title {
+  margin-bottom: 30px;
+}
+
+h3 {
+  padding: 30px 0 10px;
+  border-bottom: 2px solid #333;
+
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  height: 21px;
+  padding: 0 9px;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  font-size: 18px;
+  line-height: 18px;
+  color: #888;
+}
+
+/* header */
+
+.header {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  
+  text-align: right;
+}
+
+.header-image {
+  display: block; 
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.header-link {
+  display: block;
+}
+
+.get-info {
+  font-family: "fantasy", cursive;
+}
+
+@media (max-width: 768px) {
+
+  .header-link { 
+    text-align: center; 
+  }
+
+}
+
+/* main */
+
+.main {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.add {
+  margin-top: 50px;
+}
+
+.add-task {
+  display: block;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.task-wrapper { 
+  display: flex; 
+}
+
+/* new task */
+
+button:hover { 
+  color: #0fc57c; 
+}
+
+/* task list */
+
+li {
+  display: flex;
+  padding: 20px 0;
+
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+
+  overflow: hidden; 
+}
+
+.check { 
+  margin: 0 10px; 
+}
+
+li > label {
+  width: 226px;
+  padding-left: 10px;
+
+  font-size: 18px; 
+}
+
+.delete-task:hover { 
+  color: #cf2323; 
+}
+
+.delete-task img {
+  height: 2em;
+
+  transform: rotatez(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.delete-task img:hover { 
+  transform: rotatez(0); 
+}
+
+/* completed */
+
+.completed-tasks label { 
+  text-decoration: line-through #888; 
+}
+
+/* edit task */
+
+ul li input[type="text"] { 
+  display: none; 
+}
+
+.task {
+  display: inline-block;
+  width: 224px;
+}
+
+ul li .edit-task label { 
+  display: none; 
+}
