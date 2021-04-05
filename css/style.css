@@ -35,18 +35,13 @@ button {
   cursor: pointer;
 }
 
-button :hover { 
-  color: #3a3a3a; 
-}
-
 /* heading */
 
 .title {
   margin-bottom: 30px;
 }
 
-h3,
-label[for="new-task"] {
+h3 {
   padding: 30px 0 10px;
   border-bottom: 2px solid #333;
 
@@ -68,10 +63,6 @@ input[type="text"] {
   font-size: 18px;
   line-height: 18px;
   color: #888;
-}
-
-input[type="text"] :focus { 
-  color: #333; 
 }
 
 /* header */
@@ -131,11 +122,6 @@ input[type="text"] :focus {
 }
 
 /* new task */
-
-label[for="add-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
 
 button:hover { 
   color: #0fc57c; 
