@@ -41,6 +41,10 @@ button :hover {
 
 /* heading */
 
+.title {
+  margin-bottom: 30px;
+}
+
 h3,
 label[for="new-task"] {
   padding: 30px 0 10px;
@@ -133,11 +137,7 @@ label[for="add-task"] {
   margin: 0 0 20px;
 }
 
-#new-task { 
-  width: 318px; 
-}
-
-button :hover { 
+button:hover { 
   color: #0fc57c; 
 }
 
@@ -163,10 +163,6 @@ li > label {
   padding-left: 10px;
 
   font-size: 18px; 
-}
-
-input[type="text"] {  
-  width: 226px; 
 }
 
 .delete-task:hover { 
